@@ -667,15 +667,19 @@ tr:last-child .tariffs__include:last-child {
   background: #F2F2F2;
 }
 @media (min-width: 660px) {
-  .achievements__wrapper .achievements__wrapper {
+  .achievements__wrapper {
     width: 616px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     border: 2px solid #E5E5E5;
     border-radius: 1px;
+    background: #FFFFFF;
   }
-  .achievements__wrapper .achievements__title {
+  .achievements {
+    background: #FFFFFF;
+  }
+  .achievements__title {
     text-align: center;
     text-transform: uppercase;
     font-weight: normal;
@@ -683,20 +687,20 @@ tr:last-child .tariffs__include:last-child {
     line-height: 30px;
     color: #D22856;
   }
-  .achievements__wrapper .achievements__list {
+  .achievements__list {
     display: flex;
     flex-direction: column;
   }
 }
 @media (min-width: 1200px) {
-  .achievements__wrapper .achievements__wrapper {
+  .achievements__wrapper {
     width: 936px;
     display: flex;
     justify-content: space-between;
     border: 2px solid #E5E5E5;
     border-radius: 1px;
   }
-  .achievements__wrapper .achievements__title {
+  .achievements__title {
     text-align: center;
     text-transform: uppercase;
     font-weight: normal;
@@ -704,7 +708,7 @@ tr:last-child .tariffs__include:last-child {
     line-height: 30px;
     color: #D22856;
   }
-  .achievements__wrapper .achievements__list {
+  .achievements__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -760,6 +764,7 @@ tr:last-child .tariffs__include:last-child {
   .contact-info__wrapper .contact-info__wrapper {
     width: 936px;
     display: flex;
+    order: 2;
     justify-content: center;
     flex-direction: column;
     border: 2px solid #E5E5E5;
@@ -800,7 +805,7 @@ tr:last-child .tariffs__include:last-child {
   width: 320px;
 }
 @media (min-width: 660px) {
-  .app__wrapper .app__wrapper {
+  .app__wrapper {
     width: 616px;
     display: flex;
     justify-content: center;
@@ -809,12 +814,12 @@ tr:last-child .tariffs__include:last-child {
     border-radius: 1px;
     background: #FFFFFF;
   }
-  .app__wrapper .app__list {
+  .app__list {
     display: flex;
     flex-direction: column;
     list-style: none;
   }
-  .app__wrapper .app__text {
+  .app__text {
     align-items: center;
     color: #283645;
     font-weight: normal;
@@ -823,7 +828,7 @@ tr:last-child .tariffs__include:last-child {
   }
 }
 @media (min-width: 1200px) {
-  .app__wrapper .app__wrapper {
+  .app__wrapper {
     width: 431px;
     display: flex;
     justify-content: center;
@@ -832,12 +837,12 @@ tr:last-child .tariffs__include:last-child {
     border-radius: 1px;
     background: #FFFFFF;
   }
-  .app__wrapper .app__list {
+  .app__list {
     display: flex;
     flex-direction: column;
     list-style: none;
   }
-  .app__wrapper .app__text {
+  .app__text {
     align-items: center;
     color: #283645;
     font-weight: normal;
@@ -931,6 +936,8 @@ tr:last-child .tariffs__include:last-child {
 }
 .gallery__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 .gallery__item {
   background: #F2F2F2;
@@ -966,118 +973,135 @@ tr:last-child .tariffs__include:last-child {
   line-height: 24px;
 }
 @media (min-width: 660px) {
-  .gallery__wrapper .gallery__wrapper {
+  .gallery__wrapper {
     width: 660px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: column;
+    margin: 0;
   }
-  .gallery__wrapper .gallery__info {
+  .gallery__item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  .gallery__info {
     text-align: center;
     color: #283645;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
   }
-  .gallery__wrapper .gallery__author-image-day {
+  .gallery__author-image-day {
     width: 660px;
   }
-  .gallery__wrapper .gallery__author-info-day {
+  .gallery__author-info-day {
     display: flex;
     width: 620px;
   }
-  .gallery__wrapper .gallery__author-image {
+  .gallery__author-image {
     width: 300px;
   }
-  .gallery__wrapper .gallery__author-info {
+  .gallery__author-info {
     display: flex;
     width: 300px;
   }
-  .gallery__wrapper .upload-form {
+  .upload-form {
     display: flex;
     width: 660px;
     background-color: #F2F2F2;
   }
-  .gallery__wrapper .upload__author-image {
+  .upload__author-image {
     width: 300px;
   }
-  .gallery__wrapper .upload__filters {
+  .upload__filters {
     list-style: none;
     flex-direction: column;
   }
-  .gallery__wrapper .upload__item {
+  .upload__item {
     width: 202px;
     height: 2px;
     background: #283645;
   }
-  .gallery__wrapper .yes__button {
+  .yes__button {
     width: 260px;
     border: 3px solid #D22856;
     box-sizing: border-box;
     border-radius: 30px;
   }
-  .gallery__wrapper .no__button {
+  .no__button {
     width: 260px;
     opacity: 0.1;
     border: 3px solid #283645;
     box-sizing: border-box;
     border-radius: 30px;
   }
+  .gallery__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: initial;
+    width: 620px;
+    padding: 0;
+  }
 }
 @media (min-width: 1200px) {
-  .gallery__wrapper .gallery__wrapper {
+  .gallery__list {
+    display: flex;
+    width: 940px;
+  }
+  .gallery__wrapper {
     width: 1200px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .gallery__wrapper .gallery__info {
+  .gallery__info {
     text-align: center;
     color: #283645;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
   }
-  .gallery__wrapper .gallery__author-image-day {
+  .gallery__author-image-day {
     width: 1200px;
   }
-  .gallery__wrapper .gallery__author-info-day {
+  .gallery__author-info-day {
     display: flex;
     width: 940px;
   }
-  .gallery__wrapper .gallery__author-image {
+  .gallery__author-image {
     width: 300px;
   }
-  .gallery__wrapper .gallery__author-info {
+  .gallery__author-info {
     display: flex;
     width: 300px;
   }
-  .gallery__wrapper .upload-form {
+  .upload-form {
     display: flex;
     width: 940px;
     background-color: #F2F2F2;
   }
-  .gallery__wrapper .upload__author-image {
+  .upload__author-image {
     width: 300px;
   }
-  .gallery__wrapper .upload__filters {
+  .upload__filters {
     list-style: none;
     flex-direction: column;
   }
-  .gallery__wrapper .upload__item {
+  .upload__item {
     width: 288px;
     height: 2px;
     background: #283645;
   }
-  .gallery__wrapper .yes__button {
+  .yes__button {
     width: 183px;
     border: 3px solid #D22856;
     box-sizing: border-box;
     border-radius: 30px;
   }
-  .gallery__wrapper .no__button {
+  .no__button {
     width: 183px;
     opacity: 0.1;
     border: 3px solid #283645;

@@ -667,7 +667,7 @@ tr:last-child .tariffs__include:last-child {
   background: #F2F2F2;
 }
 @media (min-width: 660px) {
-  .achievements__wrapper .achievements__wrapper {
+  .achievements__wrapper {
     width: 616px;
     display: flex;
     justify-content: center;
@@ -675,7 +675,7 @@ tr:last-child .tariffs__include:last-child {
     border: 2px solid #E5E5E5;
     border-radius: 1px;
   }
-  .achievements__wrapper .achievements__title {
+  .achievements__title {
     text-align: center;
     text-transform: uppercase;
     font-weight: normal;
@@ -683,20 +683,23 @@ tr:last-child .tariffs__include:last-child {
     line-height: 30px;
     color: #D22856;
   }
-  .achievements__wrapper .achievements__list {
+  .achievements__list {
     display: flex;
     flex-direction: column;
   }
+  .achievements {
+    background: #FFFFFF;
+  }
 }
 @media (min-width: 1200px) {
-  .achievements__wrapper .achievements__wrapper {
+  .achievements__wrapper {
     width: 936px;
     display: flex;
     justify-content: space-between;
     border: 2px solid #E5E5E5;
     border-radius: 1px;
   }
-  .achievements__wrapper .achievements__title {
+  .achievements__title {
     text-align: center;
     text-transform: uppercase;
     font-weight: normal;
@@ -704,10 +707,28 @@ tr:last-child .tariffs__include:last-child {
     line-height: 30px;
     color: #D22856;
   }
-  .achievements__wrapper .achievements__list {
+  .achievements__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: unset;
+    margin: 0;
+    -webkit-padding-start: 60px;
+            padding-inline-start: 60px;
+    -webkit-padding-end: 60px;
+            padding-inline-end: 60px;
+  }
+  .achievements__item {
+    display: flex;
+    align-items: center;
+  }
+  .achievements__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .achievements__input {
+    margin-right: 22px;
   }
 }
 .achievements__title {
@@ -732,23 +753,26 @@ tr:last-child .tariffs__include:last-child {
   background: #FFFFFF;
 }
 @media (min-width: 660px) {
-  .contact-info__wrapper .contact-info__wrapper {
+  .contact-info__wrapper {
     width: 616px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     border: 2px solid #E5E5E5;
     border-radius: 1px;
     background: #FFFFFF;
   }
-  .contact-info__wrapper .contact-info-input {
+  .contact-info__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info-input {
     width: 496px;
     height: 59px;
     border: 2px solid #E5E5E5;
     border-radius: 1px;
     background: #FFFFFF;
   }
-  .contact-info__wrapper .contact-info-name {
+  .contact-info-name {
     text-transform: uppercase;
     color: #D22856;
     font-weight: normal;
@@ -757,7 +781,7 @@ tr:last-child .tariffs__include:last-child {
   }
 }
 @media (min-width: 1200px) {
-  .contact-info__wrapper .contact-info__wrapper {
+  .contact-info__wrapper {
     width: 936px;
     display: flex;
     justify-content: center;
@@ -766,14 +790,19 @@ tr:last-child .tariffs__include:last-child {
     border-radius: 1px;
     background: #FFFFFF;
   }
-  .contact-info__wrapper .contact-info-input {
+  .contact-info__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: initial;
+  }
+  .contact-info-input {
     width: 371px;
     height: 59px;
     border: 2px solid #E5E5E5;
     border-radius: 1px;
     background: #FFFFFF;
   }
-  .contact-info__wrapper .contact-info-name {
+  .contact-info-name {
     text-transform: uppercase;
     color: #D22856;
     font-weight: normal;
@@ -795,12 +824,20 @@ tr:last-child .tariffs__include:last-child {
   font-size: 14px;
   line-height: 30px;
 }
+.contact-info__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #D22856;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+}
 .app {
   background: #F2F2F2;
   width: 320px;
 }
 @media (min-width: 660px) {
-  .app__wrapper .app__wrapper {
+  .app__wrapper {
     width: 616px;
     display: flex;
     justify-content: center;
@@ -809,12 +846,12 @@ tr:last-child .tariffs__include:last-child {
     border-radius: 1px;
     background: #FFFFFF;
   }
-  .app__wrapper .app__list {
+  .app__list {
     display: flex;
     flex-direction: column;
     list-style: none;
   }
-  .app__wrapper .app__text {
+  .app__text {
     align-items: center;
     color: #283645;
     font-weight: normal;
@@ -823,7 +860,7 @@ tr:last-child .tariffs__include:last-child {
   }
 }
 @media (min-width: 1200px) {
-  .app__wrapper .app__wrapper {
+  .app__wrapper {
     width: 431px;
     display: flex;
     justify-content: center;
@@ -832,12 +869,12 @@ tr:last-child .tariffs__include:last-child {
     border-radius: 1px;
     background: #FFFFFF;
   }
-  .app__wrapper .app__list {
+  .app__list {
     display: flex;
     flex-direction: column;
     list-style: none;
   }
-  .app__wrapper .app__text {
+  .app__text {
     align-items: center;
     color: #283645;
     font-weight: normal;

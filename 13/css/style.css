@@ -209,7 +209,7 @@
   display: block;
   height: 463px;
   width: 100%;
-  background: url("/img/Grouponemobile.png") no-repeat 40% bottom, url('../img/back-mobile.png') no-repeat top;
+  background: url("/img/Grouponemobile.png") no-repeat 40% bottom, url('/img/bg-back-mobile@1x.jpg') no-repeat top;
   background-size: auto, cover;
 }
 .intro__wrapper {
@@ -239,7 +239,7 @@
 }
 @media (min-width: 660px) {
   .intro {
-    background: url('/img/Groupthreetablet.png') no-repeat bottom, url('/img/backtablet.png') no-repeat;
+    background: url('/img/Groupthreetablet.png') no-repeat bottom, url('/img/bg-back-tablet@1x.jpg') no-repeat;
     padding-top: 110px;
     background-size: 600px, cover;
     padding: 180px 5% 60px;
@@ -272,7 +272,7 @@
 }
 @media (min-width: 1200px) {
   .intro {
-    background: url("/img/Groupfivedesktop.png") no-repeat center bottom, url("..//img/back-desktop.png") no-repeat center;
+    background: url("/img/Groupfivedesktop.png") no-repeat center bottom, url("/img/bg-back-desktop@1x.jpg") no-repeat center;
     background-color: #1d2631;
     background-size: 1050px, cover;
   }
@@ -1555,6 +1555,7 @@ fieldset {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  resize: none;
 }
 .form__necessarily {
   display: block;
@@ -1648,11 +1649,11 @@ fieldset {
   background-color: #f2f2f2;
 }
 .gallery__item {
-  max-width: 280px;
+  width: 280px;
   margin: 0 auto 21px;
 }
 .gallery__image-day {
-  max-width: none;
+  width: unset;
 }
 .gallery__a {
   max-width: none;
